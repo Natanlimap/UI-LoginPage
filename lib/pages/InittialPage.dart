@@ -37,7 +37,7 @@ Widget _bodyMain(){ //the body content of this page
       formWidgets.userNameField(_loginController), //formfieldtext from formWidgetClass for user put the login
       new Padding(padding: EdgeInsets.only(bottom: 10)),//space between forms fields
       formWidgets.passwordField(_passwordController), //formfieldtext from formWidgetClass for user put the password
-      new Padding(padding: EdgeInsets.only(bottom: 10)),//space between forms fields and button
+      new Padding(padding: EdgeInsets.only(bottom: 10)),//space between forms field and button
       formWidgets.loginButton(), //button
       new Padding(padding: EdgeInsets.only(bottom: 60)),
       new Padding(padding: EdgeInsets.only(bottom: 20), child: new Text("or login with", style: _orLoginWithStyle(), textAlign: TextAlign.center,),),
