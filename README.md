@@ -1,13 +1,10 @@
+# About the project
 
-#About the project
-
-##User interface Project #1: Implementing a UI Login Page
+## User interface Project #1: Implementing a UI Login Page
 In this poject was done a user interface login page with Flutter as framework
 
-##Screenshot
-
-![Our login page done in this app](https://github.com/Natanlimap/UI-LoginPage/blob/master/Screenshots/loginpage.png).element height="50%" width="50%"
-
+## Screenshot
+<img src="https://github.com/Natanlimap/UI-LoginPage/blob/master/Screenshots/loginpage.png" style=" width:20% ; height:120% " />
 
 Author
 Natan Pereira - (https://github.com/Natanlimap)
