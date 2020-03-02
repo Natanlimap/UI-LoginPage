@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:typicons_flutter/typicons_flutter.dart';
 import 'package:uiloginpage/class/formWidgetClass.dart';
 
 class InitialWidget extends StatelessWidget {
@@ -47,6 +46,17 @@ Widget _bodyMain(){ //the body content of this page
   );
 }
 
+
+Widget _socialMediaButtonCollection(){ //Widget thats return the
+  return new Column(
+    children: <Widget>[
+      _socialMediaButton(Colors.redAccent, "Continue with google", "google-icon.png"), //google in sign button
+      new Padding(padding: EdgeInsets.only(top: 10)),
+      _socialMediaButton(Colors.indigoAccent, "Continue with facebook", "facebook-icon.png"), //facebook sign in button
+    ],
+  );
+}
+
 Widget _socialMediaButton(Color color, String text, String image){ //button used for sign in with social media
   return new RaisedButton(
     onPressed: (){
@@ -67,21 +77,12 @@ Widget _socialMediaButton(Color color, String text, String image){ //button used
   );
 }
 
-Widget _socialMediaButtonCollection(){ //Widget thats return the
-  return new Column(
-    children: <Widget>[
-      _socialMediaButton(Colors.redAccent, "Continue with google", "google-icon.png"), //google in sign button
-      new Padding(padding: EdgeInsets.only(top: 10)),
-      _socialMediaButton(Colors.indigoAccent, "Continue with facebook", "facebook-icon.png"), //facebook sign in button
-    ],
-  );
-}
 
 TextStyle _orLoginWithStyle(){ //"or login with" style
   return TextStyle(color: Colors.black54, fontWeight: FontWeight.bold, fontSize: 16);
 }
 
 
-TextStyle _logoTextStyle(){ //Unecessary
+TextStyle _logoTextStyle(){ //Logo text style
   return TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.black45);
 }
