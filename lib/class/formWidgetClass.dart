@@ -8,7 +8,7 @@ class FormClass{ //class that contains formfields methods
       keyboardType: TextInputType.text, //keyboard with as a text type
       controller: _loginController, //controler recovered from where was called
       style: TextStyle(fontSize: 20),
-      decoration: InputDecoration(
+      decoration: InputDecoration( //usernamefield decoration
           contentPadding: EdgeInsets.fromLTRB(16, 20, 16, 20), //creating spaces inside the form
           hintText: "Username",
           prefixIcon: new Icon(Icons.person),
@@ -27,7 +27,7 @@ class FormClass{ //class that contains formfields methods
       controller: _passwordController, //controler recovered from where was called
       obscureText: true, //protect the user from showing his password
       style: TextStyle(fontSize: 20),
-      decoration: InputDecoration(
+      decoration: InputDecoration( //password field decoration
           contentPadding: EdgeInsets.fromLTRB(16, 20, 16, 20), //creating spaces inside the form
           hintText: "Password",
           prefixIcon: new Icon(Icons.security),
@@ -45,10 +45,10 @@ class FormClass{ //class that contains formfields methods
           //auth method
           //navigation
         },
-        child: new Text("Login", style: TextStyle(color: Colors.white),),
+        child: new Text("Login", style: TextStyle(color: Colors.white),), //buttons content
         padding: EdgeInsets.fromLTRB(0, 20, 0, 20),
         elevation: 10, //creates a shadow under the button
-        shape: RoundedRectangleBorder(
+        shape: RoundedRectangleBorder( //buttons decoration
           borderRadius: new BorderRadius.circular(20),
         ),
          color: Colors.blue,

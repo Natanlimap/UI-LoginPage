@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'User Interface LoginPage',
-      home: InitialWidget(),
+      home: InitialWidget(), //Our login page
     );
   }
 }

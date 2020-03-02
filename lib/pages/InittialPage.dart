@@ -27,6 +27,26 @@ class InitialWidget extends StatelessWidget {
   }
 }
 
+
+Widget _bodyMain(){ //the body content of this page
+  FormClass formWidgets = FormClass();
+  TextEditingController _loginController = TextEditingController(); //login controller
+  TextEditingController _passwordController = TextEditingController(); //password controller
+  return Column(
+    crossAxisAlignment: CrossAxisAlignment.stretch, //Streching all widgets of the column
+    children: <Widget>[
+      formWidgets.userNameField(_loginController), //formfieldtext from formWidgetClass for user put the login
+      new Padding(padding: EdgeInsets.only(bottom: 10)),//space between forms fields
+      formWidgets.passwordField(_passwordController), //formfieldtext from formWidgetClass for user put the password
+      new Padding(padding: EdgeInsets.only(bottom: 10)),//space between forms fields and button
+      formWidgets.loginButton(), //button
+      new Padding(padding: EdgeInsets.only(bottom: 60)),
+      new Padding(padding: EdgeInsets.only(bottom: 20), child: new Text("or login with", style: _orLoginWithStyle(), textAlign: TextAlign.center,),),
+      _socialMediaButtonCollection(), //login with social media options
+    ],
+  );
+}
+
 Widget _socialMediaButton(Color color, String text, String image){ //button used for sign in with social media
   return new RaisedButton(
     onPressed: (){
@@ -47,39 +67,21 @@ Widget _socialMediaButton(Color color, String text, String image){ //button used
   );
 }
 
-TextStyle _logoTextStyle(){ //Unecessary
-  return TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.black45);
-}
-
 Widget _socialMediaButtonCollection(){ //Widget thats return the
   return new Column(
     children: <Widget>[
-      _socialMediaButton(Colors.redAccent, "Continue with google", "google-icon.png"),
+      _socialMediaButton(Colors.redAccent, "Continue with google", "google-icon.png"), //google in sign button
       new Padding(padding: EdgeInsets.only(top: 10)),
-      _socialMediaButton(Colors.indigoAccent, "Continue with facebook", "facebook-icon.png"),
+      _socialMediaButton(Colors.indigoAccent, "Continue with facebook", "facebook-icon.png"), //facebook sign in button
     ],
   );
 }
 
-Widget _bodyMain(){ //the content from main widget
-  FormClass formWidgets = FormClass();
-  TextEditingController _loginController = TextEditingController();
-  TextEditingController _passwordController = TextEditingController();
-  return Column(
-    crossAxisAlignment: CrossAxisAlignment.stretch,
-
-    children: <Widget>[
-      formWidgets.userNameField(_loginController), //formfieldtext from formWidgetClass for user put the login
-      new Padding(padding: EdgeInsets.only(bottom: 10)),//space between forms fields
-      formWidgets.passwordField(_passwordController), //formfieldtext from formWidgetClass for user put the password
-      new Padding(padding: EdgeInsets.only(bottom: 10)),//space between forms fields and button
-      formWidgets.loginButton(), //button
-      new Padding(padding: EdgeInsets.only(bottom: 60)),
-      new Padding(padding: EdgeInsets.only(bottom: 20), child: new Text("or login with", style: _orLoginWithStyle(), textAlign: TextAlign.center,),),
-      _socialMediaButtonCollection(), //login with social media options
-    ],
-  );
-}
-TextStyle _orLoginWithStyle(){
+TextStyle _orLoginWithStyle(){ //"or login with" style
   return TextStyle(color: Colors.black54, fontWeight: FontWeight.bold, fontSize: 16);
+}
+
+
+TextStyle _logoTextStyle(){ //Unecessary
+  return TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.black45);
 }
