@@ -4,7 +4,7 @@
 In this poject was done a user interface login page with Flutter as framework
 
 ## Screenshot
-<img src="https://github.com/Natanlimap/UI-LoginPage/blob/master/Screenshots/loginpage.png" width="20%"  height="20%" />
+<img src="https://github.com/Natanlimap/UI-LoginPage/blob/master/Screenshots/loginpage.png" width="30%"  height="30%" />
 
 Author
 Natan Pereira - (https://github.com/Natanlimap)
