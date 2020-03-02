@@ -9,7 +9,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'User Interface LoginPage',
+<<<<<<< HEAD
       home: InitialWidget(), //Our login page
+=======
+      home: InitialWidget(),
+>>>>>>> 68902885e4f25a14a17155c4196337bd92d879e7
     );
   }
 }

@@ -8,7 +8,11 @@ class FormClass{ //class that contains formfields methods
       keyboardType: TextInputType.text, //keyboard with as a text type
       controller: _loginController, //controler recovered from where was called
       style: TextStyle(fontSize: 20),
+<<<<<<< HEAD
       decoration: InputDecoration( //usernamefield decoration
+=======
+      decoration: InputDecoration(
+>>>>>>> 68902885e4f25a14a17155c4196337bd92d879e7
           contentPadding: EdgeInsets.fromLTRB(16, 20, 16, 20), //creating spaces inside the form
           hintText: "Username",
           prefixIcon: new Icon(Icons.person),
@@ -27,7 +31,11 @@ class FormClass{ //class that contains formfields methods
       controller: _passwordController, //controler recovered from where was called
       obscureText: true, //protect the user from showing his password
       style: TextStyle(fontSize: 20),
+<<<<<<< HEAD
       decoration: InputDecoration( //password field decoration
+=======
+      decoration: InputDecoration(
+>>>>>>> 68902885e4f25a14a17155c4196337bd92d879e7
           contentPadding: EdgeInsets.fromLTRB(16, 20, 16, 20), //creating spaces inside the form
           hintText: "Password",
           prefixIcon: new Icon(Icons.security),
@@ -45,10 +53,17 @@ class FormClass{ //class that contains formfields methods
           //auth method
           //navigation
         },
+<<<<<<< HEAD
         child: new Text("Login", style: TextStyle(color: Colors.white),), //buttons content
         padding: EdgeInsets.fromLTRB(0, 20, 0, 20),
         elevation: 10, //creates a shadow under the button
         shape: RoundedRectangleBorder( //buttons decoration
+=======
+        child: new Text("Login", style: TextStyle(color: Colors.white),),
+        padding: EdgeInsets.fromLTRB(0, 20, 0, 20),
+        elevation: 10, //creates a shadow under the button
+        shape: RoundedRectangleBorder(
+>>>>>>> 68902885e4f25a14a17155c4196337bd92d879e7
           borderRadius: new BorderRadius.circular(20),
         ),
          color: Colors.blue,
