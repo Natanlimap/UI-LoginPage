@@ -6,7 +6,7 @@ In this poject was done a user interface login page with Flutter as framework
 
 ##Screenshot
 
-(https://github.com/{user}/{repo}/raw/{branch}/Screenshots/loginpageg.png)
+(https://github.com/{user}/{repo}/{branch}/Screenshots/loginpageg.png)
 
 Author
 Natan Pereira - (https://github.com/Natanlimap)
